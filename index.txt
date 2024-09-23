@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Portfolio</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="main.css" />
     <!-- Favicons -->
-    <link href="~/img/favicon.png" rel="icon">
-    <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -17,25 +17,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="~/vendor/aos/aos.css" rel="stylesheet">
-    <link href="~/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="~/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!-- Main CSS File -->
-    <link href="~/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
     <header id="header" class="header dark-background d-flex flex-column">
         <i class="header-toggle d-xl-none bi bi-list"></i>
 
         <div class="profile-img">
-            <img src="~/img/mine.jpeg" alt="" class="img-fluid rounded-circle">
+            <img src="assets/img/mine.jpeg" alt="" class="img-fluid rounded-circle">
         </div>
 
         <a class="logo d-flex align-items-center justify-content-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="~/img/logo.png" alt=""> -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
             <h1 class="sitename" style="font-size: 20px;">Abdulrahman Mohamed</h1>
         </a>
 
@@ -51,28 +51,7 @@
             <ul>
                 <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
                 <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-                @* <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li> *@
                 <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-                @* <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li> *@
-                @* <li class="dropdown">
-                    <a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li class="dropdown">
-                            <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Dropdown 1</a></li>
-                                <li><a href="#">Deep Dropdown 2</a></li>
-                                <li><a href="#">Deep Dropdown 3</a></li>
-                                <li><a href="#">Deep Dropdown 4</a></li>
-                                <li><a href="#">Deep Dropdown 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                </li> *@
                 <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
             </ul>
         </nav>
@@ -83,7 +62,7 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
 
-            <img src="~/img/main.jpeg" alt="" data-aos="fade-in" class="">
+            <img src="assets/img/main.jpeg" alt="" data-aos="fade-in" class="">
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Abdulrahman Mohamed</h2>
@@ -104,7 +83,7 @@
 
                 <div class="row gy-4 justify-content-center">
                     <div class="col-lg-4">
-                        <img src="~/img/mine.jpeg" class="img-fluid" alt="">
+                        <img src="assets/img/mine.jpeg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8 content">
                         <h2>Web Developer. (Backend Developer)</h2>
@@ -219,11 +198,11 @@
                         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                                 <div class="portfolio-content h-100">
-                                    <img src="~/img/bms.png" class="img-fluid portfolio-image" alt="">
+                                    <img src="assets/img/bms.png" class="img-fluid portfolio-image" alt="">
                                     <div class="portfolio-info">
                                         <h4>App 1</h4>
                                         <p>Bank Management System</p>
-                                        <a href="~/img/bms.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/bms.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         <a href="#" title="More Details" class="details-link" onclick="event.preventDefault(); openModal('Bank Management System', 'This project allows users to manage their bank account using a desktop application. Users can send money, withdraw, deposit, or manage their account.', 'This project was implemented using JAVA, SQL Server.');"><i class="bi bi-link-45deg"></i></a>
                                     </div>
                                 </div>
@@ -231,11 +210,11 @@
 
                             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                                 <div class="portfolio-content h-100">
-                                    <img src="~/img/age_pred.png" class="img-fluid portfolio-image" alt="">
+                                    <img src="assets/img/age_pred.png" class="img-fluid portfolio-image" alt="">
                                     <div class="portfolio-info">
                                         <h4>App 2</h4>
                                         <p>Age Prediction</p>
-                                        <a href="~/img/age_pred.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/age_pred.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         <a href="#" title="More Details" class="details-link" onclick="event.preventDefault(); openModal('Age Prediction', 'This project analyzes images and then predicts the age of the person in the images. This is done by analyzing many images, knowing that the age of each person in all these images is known to facilitate the training process.', 'AI, Machine Learning, Neural Networks');"><i class="bi bi-link-45deg"></i></a>
                                     </div>
                                 </div>
@@ -243,11 +222,11 @@
 
                             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                                 <div class="portfolio-content h-100">
-                                    <img src="~/img/inventory.png" class="img-fluid portfolio-image" alt="">
+                                    <img src="assets/img/inventory.png" class="img-fluid portfolio-image" alt="">
                                     <div class="portfolio-info">
                                         <h4>App 3</h4>
                                         <p>Inventory Management System</p>
-                                        <a href="~/img/inventory.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/inventory.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         <a href="#" title="More Details" class="details-link" onclick="event.preventDefault(); openModal('Inventory Management System', 'This project helps manage inventory by tracking stock levels, orders, and sales. It provides real-time updates and reporting.', 'This project was created using ASP.NET Core, MVC, Entity Framework, SQL Server, and User Authentication.');"><i class="bi bi-link-45deg"></i></a>
                                     </div>
                                 </div>
@@ -255,11 +234,11 @@
 
                             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                                 <div class="portfolio-content h-100">
-                                    <img src="~/img/passengers.jpeg" class="img-fluid portfolio-image" alt="">
+                                    <img src="assets/img/passengers.jpeg" class="img-fluid portfolio-image" alt="">
                                     <div class="portfolio-info">
                                         <h4>App 4</h4>
                                         <p>Airline Passengers Satisfaction</p>
-                                        <a href="~/img/passengers.jpeg" title="App 4" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/passengers.jpeg" title="App 4" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         <a href="#" title="More Details" class="details-link" onclick="event.preventDefault(); openModal('Airline Passengers Satisfaction', 'This project analyzes passenger feedback to measure satisfaction levels with airline services and operations.', 'This project was implemented using AI machine-learning models to analyze huge previous surveys.');"><i class="bi bi-link-45deg"></i></a>
                                     </div>
                                 </div>
@@ -267,11 +246,11 @@
 
                             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                                 <div class="portfolio-content h-100">
-                                    <img src="~/img/spam.jpg" class="img-fluid portfolio-image" alt="">
+                                    <img src="assets/img/spam.jpg" class="img-fluid portfolio-image" alt="">
                                     <div class="portfolio-info">
                                         <h4>App 5</h4>
                                         <p>Spam Emails Detection</p>
-                                        <a href="~/img/spam.jpg" title="App 5" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                        <a href="assets/img/spam.jpg" title="App 5" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                         <a href="#" title="More Details" class="details-link" onclick="event.preventDefault(); openModal('Spam Emails Detection', 'This project implements a machine learning model to classify emails as spam or not spam based on various features.', 'This project is created using AI machine learning, Natural Language Processing(NLP), Python, and Scikit-learn');"><i class="bi bi-link-45deg"></i></a>
                                     </div>
                                 </div>
@@ -478,22 +457,22 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/vendor/php-email-form/validate.js"></script>
-    <script src="~/vendor/aos/aos.js"></script>
-    <script src="~/vendor/typed.js/typed.umd.js"></script>
-    <script src="~/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="~/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="~/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="~/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="~/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="~/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/site.js" asp-append-version="true"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="~/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
